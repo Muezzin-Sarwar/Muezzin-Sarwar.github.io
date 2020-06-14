@@ -19,6 +19,7 @@
 	--fs-h2: 2.25rem;
 	--f3-h3: 1.25rem;
 	--fs-body: 1rem;
+	--fs-icons: 2rem;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.5);
 }
@@ -52,6 +53,11 @@ img {
 
 strong {
 	font-weight: var(--fw-bold);
+}
+
+:focus {
+	outline: 3px solid var(--clr-accent);
+	outline-offset: 2px;
 }
 
 /* Typography */
@@ -121,6 +127,8 @@ nav {
 	.intro {
 		display: grid;
 		width: min-content;
+		margin: 0 auto;
+		grid-column-gap: 1em;
 		grid-template-areas:
 			'img title'
 			'img subtitle';
@@ -136,6 +144,7 @@ nav {
 
 	.section_title-intro {
 		padding-left: 0.25em;
+		padding-top: 0.75em;
 	}
 
 	.section_subtitle-intro {
@@ -153,4 +162,78 @@ nav {
 
 .my-projects {
 	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	text-align: center;
+}
+
+.section_title-projects {
+	position: relative;
+}
+
+.section_title-projects::after {
+	content: '';
+	display: block;
+	width: 5em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-light);
+	opacity: 0.3;
+}
+
+/* About me */
+
+.about-me {
+	max-width: 850px;
+	margin: 0 auto;
+	text-align: center;
+}
+.skill_item {
+	display: block;
+}
+.section_title-about::after {
+	content: '';
+	display: block;
+	width: 5em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: var(--clr-dark);
+	opacity: 0.3;
+}
+
+/* Contact Me */
+
+.contact-me {
+	background: var(--clr-dark);
+	text-align: center;
+}
+
+/* Footer */
+
+.footer {
+	background: #111111;
+	color: var(--clr-light);
+	text-align: center;
+	padding: 2.5em 0;
+	font-size: var(--fs-icons);
+}
+
+.footer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.social-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0.1em 0;
+	padding: 0;
+}
+
+.social-list_item {
+	margin: 0 0.5em;
+}
+
+.social-list_link {
+	padding: 0.5em;
 }
