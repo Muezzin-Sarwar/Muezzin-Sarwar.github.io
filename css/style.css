@@ -12,7 +12,7 @@
 	--fw-bold: 900;
 
 	--clr-light: #fff7de;
-	--clr-dark: #303030;
+	--clr-dark: #424242;
 	--clr-accent: #cac3aa8c;
 
 	--fs-h1: 3rem;
@@ -25,7 +25,7 @@
 
 @media (min-width: 800px) {
 	:root {
-		--fs-h1: 4.1rem;
+		--fs-h1: 3.5rem;
 		--fs-h2: 3rem;
 		--fs-h3: 1.5rem;
 		--fs-body: 1.125rem;
@@ -147,4 +147,10 @@ nav {
 		left: -1.5em;
 		width: calc(100% + 1.5em);
 	}
+}
+
+/* My Projects */
+
+.my-projects {
+	background-color: var(--clr-dark);
 }
